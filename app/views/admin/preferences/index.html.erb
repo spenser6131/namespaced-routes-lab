@@ -1,0 +1,11 @@
+<% if Preference.first.allow_create_artists %>
+  <%= "Artists may be created." %>
+<% else %>
+  <%= "Artists may not be created." %>
+<% end %>
+<br>
+<% if Preference.first.allow_create_songs %>
+  <%= "Songs may be created." %>
+<% else %>
+  <%= "Songs may not be created." %>
+<% end %>
